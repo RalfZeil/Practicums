@@ -1,3 +1,4 @@
+package Practicum1;
 public class Opdracht4 {
     public static void main(String[] args) {
         int som = 0;

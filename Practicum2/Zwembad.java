@@ -12,11 +12,7 @@ public class Zwembad{
         diepte = dp;
     }
 
-    public Zwembad(){
-        lengte  = 0.0;
-        breedte = 0.0;
-        diepte  = 0.0;
-    }
+    public Zwembad(){}
 
     //Setters
     public void setLengte   (double lg) { lengte    = lg; }

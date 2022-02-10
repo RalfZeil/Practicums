@@ -1,3 +1,4 @@
+package Practicum1;
 import java.lang.Math;
 
 public class Opdracht3 {
