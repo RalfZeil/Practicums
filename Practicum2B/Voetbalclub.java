@@ -7,7 +7,12 @@ public class Voetbalclub{
     private int aantalVerloren;
 
     public Voetbalclub(String nm){
+        if(nm == ""){
+          clubNaam = "FC";
+        }
+        else{
         clubNaam = nm;
+        }
     }
 
     public void verwerkResultaat(char ch) {
