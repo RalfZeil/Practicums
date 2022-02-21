@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Opdracht1",
+            "request": "launch",
+            "mainClass": "Practicum1.Opdracht1",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Opdracht2",
+            "request": "launch",
+            "mainClass": "Practicum1.Opdracht2",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Opdracht3",
+            "request": "launch",
+            "mainClass": "Practicum1.Opdracht3",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Opdracht4",
+            "request": "launch",
+            "mainClass": "Practicum1.Opdracht4",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Opdracht5",
+            "request": "launch",
+            "mainClass": "Practicum1.Opdracht5",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Practicum2.Main",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "Practicum2B.Main",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "Practicum3B.Main",
+            "projectName": "Practicums_4e0a12ec"
+        }
+    ]
+}
