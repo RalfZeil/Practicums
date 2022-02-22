@@ -6,8 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class VoetbalclubTest {
     @Test 
     public void checkPuntenVoorVoetbalclub() { 
+        //Checken of met geen input de naam FC word
         Voetbalclub aj = new Voetbalclub("");
+        assertEquals("FC 0 0 0 0 0", aj.toString()); 
+
         aj.verwerkResultaat('w');
-        assertEquals(3, aj.aantalPunten()); 
+        aj.verwerkResultaat('w');
+        aj.verwerkResultaat('g');
+        assertEquals(7, aj.aantalPunten());
     } 
 } 
