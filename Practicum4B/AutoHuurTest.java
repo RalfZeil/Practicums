@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AutoHuurTest {
 
     @Test 
-    public void KlantZonderKortingTest() { 
+    public void TestKlantZonderKorting() { 
         Klant k1 = new Klant("John Doe");
 
         Auto a1 = new Auto("Audi", 300.0);
@@ -20,7 +20,7 @@ class AutoHuurTest {
     } 
 
     @Test 
-    public void KlantMetKortingTest() { 
+    public void TestKlantMetKorting() { 
         Klant k1 = new Klant("John Doe");
         k1.setKorting(50.0);
 
@@ -38,7 +38,6 @@ class AutoHuurTest {
     public void TestToStingNullInAutoEnHuurder(){
         AutoHuur ah1 = new AutoHuur();
 
-        assertEquals(0.0, ah1.totaalPrijs());
         assertEquals("er is geen auto bekend"+ "\n" + "er is geen huurder bekend" + "\n" + "aantal dagen: 0 en dat kost: 0.0", ah1.toString());
     }
 
@@ -49,7 +48,6 @@ class AutoHuurTest {
         AutoHuur ah1 = new AutoHuur();
         ah1.setHuurder(k1);
 
-        assertEquals(0.0, ah1.totaalPrijs());
         assertEquals("er is geen auto bekend"+ "\n" + "op naam van: John Doe (korting: 0.0%)" + "\n" + "aantal dagen: 0 en dat kost: 0.0", ah1.toString());
     }
 
@@ -60,7 +58,6 @@ class AutoHuurTest {
         AutoHuur ah1 = new AutoHuur();
         ah1.setGehuurdeAuto(a1);
 
-        assertEquals(0.0, ah1.totaalPrijs());
         assertEquals("auto type: Audi A4 met prijs per dag: 50.0"+ "\n" + "er is geen huurder bekend" + "\n" + "aantal dagen: 0 en dat kost: 0.0", ah1.toString());
     }
 
@@ -72,9 +69,32 @@ class AutoHuurTest {
         AutoHuur ah1 = new AutoHuur();
         ah1.setGehuurdeAuto(a1);
         ah1.setHuurder(k1);
-
-        assertEquals(0.0, ah1.totaalPrijs());
+        
         assertEquals("auto type: Audi A4 met prijs per dag: 50.0"+ "\n" + "op naam van: John Doe (korting: 0.0%)" + "\n" + "aantal dagen: 0 en dat kost: 0.0", ah1.toString());
+    }
+
+    @Test
+    public void TestTotaalPrijs(){
+        
+        Auto a1 = new Auto("Audi A4", 50.0);
+        Klant k1 = new Klant("John Doe");
+        AutoHuur ah1 = new AutoHuur();
+        ah1.setGehuurdeAuto(a1);
+        ah1.setHuurder(k1);
+        ah1.setAantalDagen(10);
+        
+        assertEquals(500.0, ah1.totaalPrijs());
+    }
+
+    @Test
+    public void TestTotaalPrijsMetNullAuto(){
+        
+        Klant k1 = new Klant("John Doe");
+        AutoHuur ah1 = new AutoHuur();
+        ah1.setHuurder(k1);
+        ah1.setAantalDagen(10);
+        
+        assertEquals(0.0, ah1.totaalPrijs());
     }
 
 } 
