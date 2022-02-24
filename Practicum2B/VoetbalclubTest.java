@@ -33,6 +33,13 @@ class VoetbalclubTest {
     }
 
     @Test
+    public void testSlechteInput(){
+        Voetbalclub aj = new Voetbalclub("");
+        aj.verwerkResultaat('h');
+        assertEquals(0, aj.aantalPunten());
+    }
+
+    @Test
     public void meerdereRondesOptellen(){
         Voetbalclub aj = new Voetbalclub("");
         aj.verwerkResultaat('w');
