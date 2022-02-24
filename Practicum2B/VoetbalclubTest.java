@@ -1,13 +1,22 @@
 package Practicum2B;
 
 import org.junit.jupiter.api.Test; 
-import static org.junit.jupiter.api.Assertions.*; 
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach; 
 
 class VoetbalclubTest {
+
+    Voetbalclub aj;
+    
+    @BeforeEach
+    public void init(){
+        aj = new Voetbalclub("");
+    }
+
     @Test 
     public void geenNaamWordFC() { 
         //Checken of met geen input de naam FC word
-        Voetbalclub aj = new Voetbalclub("");
         assertEquals("FC 0 0 0 0 0", aj.toString()); 
     } 
 
