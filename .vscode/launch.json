@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "Practicum6.Main",
+            "projectName": "Practicums_4e0a12ec"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "Practicum5.Main",
             "projectName": "Practicums_4e0a12ec"
         },
