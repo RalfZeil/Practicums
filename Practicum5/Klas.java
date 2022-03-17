@@ -16,9 +16,9 @@ public class Klas {
     }
 
     public void wijzigCijfer(String nm, double nweCijfer){
-        for (Leerling temp : deLeerlingen){
-            if (temp.getNaam().equals(nm)){
-                temp.setCijfer(nweCijfer);
+        for (Leerling lr : deLeerlingen){
+            if (lr.getNaam().equals(nm)){
+                lr.setCijfer(nweCijfer);
             }
         }
     }
