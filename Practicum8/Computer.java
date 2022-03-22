@@ -42,7 +42,7 @@ public class Computer implements Goed {
     }
 
     public String toString() {
-        return "Computer: " + type + " met productie jaar " + productieJaar + " heeft een waarde van: " + String.format("%.2f", this.huidigeWaarde()) ;
+        return "Computer: " + type + " met productie jaar " + productieJaar + " heeft een waarde van: " + Utils.euroBedrag(this.huidigeWaarde());
     }
     
 }
